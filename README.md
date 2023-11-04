@@ -1,14 +1,14 @@
-# NutriGPT: Unlocking Nutrition Insights for India 🇮🇳
+# AgriPriceGPT: Unlocking Pricing Insights for commodity food items in India 🇮🇳
 
-![image](https://github.com/AnimeshN/nutriGPT-database-python/assets/17973453/b5a183e0-7b0c-4aff-a0b8-863d65ed931c)
+![image](https://github.com/AnimeshN/AgriPriceGPT-database-python/assets/17973453/b5a183e0-7b0c-4aff-a0b8-863d65ed931c)
 
 
-## About NutriGPT
-NutriGPT is an AI-powered application that connects to a real-time **SQLite database** and generates data embeddings. It utilizes Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) to build a real-time Large Language Model (LLM)-enabled data pipeline in Python, combining data from multiple databases.
+## About AgriPriceGPT
+AgriPriceGPT is an AI-powered application that connects to a real-time **SQLite database** and generates data embeddings. It utilizes Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) to build a real-time Large Language Model (LLM)-enabled data pipeline in Python, combining data from multiple databases.
 
 ## How to Use
 
-Explore and gain insights into the nutrition status of India. Feel free to ask questions like on indicators cover a wide range of topics, including child health, maternal care, family planning, healthcare access, sanitation, hygiene, childhood diseases, and more. 
+Explore and gain insights into the state wise pricing for commodity food prices in India. Feel free to ask questions like on price indicators across different commodity foods based on any state.. 
 
 ### Health and Nutrition indicator availibit
 
@@ -46,26 +46,25 @@ Explore and gain insights into the nutrition status of India. Feel free to ask q
 ---
 
 ## End User
-The primary end users of NutriGPT are researchers, policymakers, and healthcare professionals interested in gaining insights into the nutrition status of India. Secondary users may include students, journalists, and anyone seeking information on nutrition-related topics in India.
+The primary end users of AgriPriceGPT are Farmers, Consumers, and middlemen interested in gaining insights into the current prices of commoditieis in India. Secondary users may include government boids, industries who can use this to moderate prices.
 
 ---
 
 ## Industry Impact
-NutriGPT has the potential to have a significant impact on the healthcare and nutrition industry in India. It provides a convenient and efficient way to access real-time nutrition data and insights, allowing stakeholders to make informed decisions and formulate effective policies. Researchers can use NutriGPT to analyze trends and patterns in nutrition data, leading to valuable discoveries in the field of public health.
+AgriPriceGPT has the potential to have a significant impact on the Agriculture industry in India. It provides a convenient and efficient way to access real-time food prices in India, allowing stakeholders to make informed decisions. 
 
 ---
 
 ## Business Value
-NutriGPT offers a valuable service by bridging the gap between data sources and actionable insights. It can be monetized by offering premium features or data analysis services to organizations and institutions interested in in-depth nutrition assessments. The application can generate revenue through subscription models or consulting services for data-driven decision-making.
+AgriPriceGPT offers a valuable service by bridging the gap between data sources and actionable insights. It can be monetized by offering premium features or data analysis services to farmers and industries interested in discovering current prices in India. The application can generate revenue through subscription models or consulting services for data-driven decision-making.
 
 ---
 
 ## Utilization of the LLM App
-- NutriGPT utilizes the LLM (Large Language Model) App features provided by Pathway to build a real-time data pipeline.
+- AgriPriceGPT utilizes the LLM (Large Language Model) App features provided by Pathway to build a real-time data pipeline.
 - The LLM App enables natural language processing capabilities, allowing users to ask questions in plain language and receive relevant nutrition insights.
-- NutriGPT leverages the LLM's ability to process and analyze text data to extract meaningful information from various sources, including its connection to an SQL database.
-- It specifically uses NFHS5 (National Family Health Survey 5) data to produce its results, ensuring that users have access to the most up-to-date and reliable information regarding nutrition in India.
-- This direct connection to the database enhances NutriGPT's capabilities, as it can access and analyze data that already resides in multiple applications and databases, providing users with comprehensive insights about nutrition data and trends. This streamlining of data retrieval and analysis significantly improves the efficiency and effectiveness of the application.
+- AgriPriceGPT leverages the LLM's ability to process and analyze text data to extract meaningful information from various sources, including its connection to an SQL database.
+- This direct connection to the database enhances AgriPriceGPT's capabilities, as it can access and analyze data that already resides in multiple applications and databases, providing users with comprehensive insights about food prices and trends. This streamlining of data retrieval and analysis significantly improves the efficiency and effectiveness of the application.
 - 
 
 ## Code sample
@@ -176,13 +175,13 @@ Then, follow the easy steps to install and get started using the sample app.
 This is done with the `git clone` command followed by the URL of the repository:
 
 ```bash
-git clone https://github.com/AnimeshN/nutriGPT-database-python.git
+git clone https://github.com/AnimeshN/AgriPriceGPT-database-python.git
 ```
 
 Next,  navigate to the project folder:
 
 ```bash
-cd nutriGPT-database-python
+cd AgriPriceGPT-database-python
 ```
 
 ### Step 2: Set environment variables
