@@ -11,38 +11,178 @@ AgriPriceGPT is an AI-powered application that connects to a real-time **SQLite 
 
 Explore and gain insights into the state wise pricing for commodity food prices in India. Feel free to ask questions like on price indicators across different commodity foods based on any state.. 
 
-### Health and Nutrition indicator availibit
+### Pricing indicators availible
 
-1. **Child Health and Nutrition**
-   - Full immunization in 12-23 month olds
-   - Received Vitamin A supplementation in 6-59 month olds
-   - Overweight in 15-49 year old women
+### 167 commodity foods
+PADDY(DHAN)
+COTTON
+SOYABEANS
+GROUND NUT
+MOONG WHOLE (GREEN GRAM)
+MUSTARD SEED (SARSON)
+GUAR SEEDS
+CHILLI
+APPLE
+WHEAT
+MAIZE
+BAJRA
+ONION
+URAD (BLACK GRAM)
+CHANA
+CASTOR SEED
+POTATO
+TOMATO
+SESAMUM(SESAME/GINGELLY/TIL)
+WHITE PEAS
+PADDY
+GARLIC
+TURMERIC
+JOWAR (SORGHUM)
+ARHAR DAL SPLIT(RED GRAM SPLIT)
+MOATH DAL
+CAULIFLOWER
+BRINJAL
+LEMON
+POMEGRANATE
+BANANA
+GREEN CHILLI
+JAGGERY
+CUMMIN SEED(JEERA)
+CUCUMBAR(KHEERA)
+LENTIL(MASUR)
+CORIANDAR
+CABBAGE
+COWPEA
+COPRA
+PUMPKIN
+GINGER
+LADIES FINGER (BHINDI)
+ORANGE
+BOTTLE GOURD
+BITTER GOURD
+SWEET LEMON (MOSAMBI)
+COCONUT
+PEAS GREEN (PODS)
+GROUNDNUT PODS_80 KG(TN)
+GINGELLY_(TN)
+WALNUT
+POINTED GOURD (PARVAL)
+PAPAYA
+ISBGOL
+SUN FLOWER SEEDS
+RADDISH
+RIDGE GOURD
+KINNOW
+CAPSICUM
+BARLEY (JAU)
+GUAVA
+TINDA
+COCONUT
+BANANA RAW
+COTTON SEED
+CARROT
+ISABGUL (PSYLLIUM)
+LINSEED
+SWEET POTATO
+CLUSTER BEANS
+KULTHI(HORSE GRAM)
+AJWAIN
+PINE APPLE
+METHI SEEDS
+SPINACH
+SWEET CORN
+WATER MELON
+CHIKOOS(SAPOTA)
+IVY GOURD
+COLACASIA
+LOBIA
+AMLA
+CORIANDER(LEAVES)
+FRENCH BEANS (FRASBEAN)
+MUSK MELON
+TAMARIND FRUIT
+LAKH/TEORA
+PEAR(MARASEBU)
+DRUMSTICK
+GHERKIN
+TARAMIRA
+RICE
+BEETROOT
+SOUNF (FENNEL SEEDS)
+LESSER YAM
+METHI(LEAVES)
+GRAPES
+MANGO
+SPONGE GOURD
+BETAL LEAVES
+PLUM
+RAGI (FINGER MILLET)
+APRICOT(JARDALU/KHUMANI)
+CASHEWNUTS
+TAMARIND
+SNAKE GUARD
+SPRING ONION
+BETELNUTS
+SILK COCOON
+MARI GOLD
+TEVADA
+LOBIA PODS
+STRAW BERRY
+CUSTARD APPLE (SHARIFA)
+PERSIMON(JAPANI FAL)
+TAPIOCA
+MILLETS
+CUMBU-HYBRID
+BROCCOLI
+FISH
+TUBER ROSE
+PEACH
+CHILLI RED
+TURNIP
+RUBBER
+MINT LEAVES
+SQUASH(CHAPPAL KADOO)
+SAFFLOWER
+PRAWN
+BER(ZIZYPHUS/BOREHANNU)
+ARHAR (TUR/RED GRAM)
+BROAD BEANS
+VEGETABLES
+CARNATION
+JUTE
+SEM
+JIMIKAND (SURAN)
+CRAB
+MUSHROOM
+GRAPEFRUIT
+JACK FRUIT
+NIGER SEED (RAMTIL)
+NEEM
+FIBER CROPS
+ARROWROOT
+BLACK PEPPER WHOLE
+RAPESEED
+HONEY
+SUNHEMP
+SPICES
+ALMOND(BADAM)
+GERBERA
+CHERRY
+CURRY LEAVES
+LEMON
+RAJMA
+SAFFRON
+KHARBUJA
+MAHUA FLOWER
+MAHUA SEED(HIPPE SEED)
+SWEET CORN
+BENGAL GRAM (CHANA DAL)
+LITCHI
+PONGAM SEEDS
+REETHA
+MISCELLANEOUS 
 
-
-2. **Women's Health and Maternal Care**
-   - High Blood Sugar in 15-49 year old women
-   - High Blood Sugar in pregnant women
-   - Large Hip Circumference in 15-49 year old women
-
-3. **Family Planning and Reproductive Health**
-   - Women 15-49 years with an unmet need for spacing method
-   - Adolescents 15-19 years with an unmet need for spacing method
-   - Adolescents 15-19 years with an unmet need for family planning
-
-4. **Healthcare Access and Utilization**
-   - Men who received counseling on the importance of proper nutrition for the mother during pregnancy
-   - Women who had any contact with a health worker in the past three months
-   - Women 15-49 years of age with hypertension
-
-5. **Sanitation and Hygiene**
-   - Open defecation
-   - Availability of water/soap for hand washing
-   - Safe disposal of child faeces
-
-6. **Childhood Diseases and Healthcare Services**
-   - Diarrhoea in children under five years of age
-   - Acute Respiratory Infection (ARI)/Pneumonia in past two weeks in under-five year olds
-   - Neonatal Mortality Rate
+### Trading volumes and prices for last one month.
 
 ---
 
