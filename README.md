@@ -1,7 +1,8 @@
 # AgriPriceGPT: Unlocking Pricing Insights for commodity food items in India 🇮🇳
 
-![image](https://github.com/AnimeshN/AgriPriceGPT-database-python/assets/17973453/b5a183e0-7b0c-4aff-a0b8-863d65ed931c)
+![i want an image 0](https://github.com/m-santh/Agri-Price_Check/assets/8970135/58cd6be4-622b-4d3d-a815-871d19222096)
 
+credit: gencraft.com
 
 ## About AgriPriceGPT
 AgriPriceGPT is an AI-powered application that connects to a real-time **SQLite database** and generates data embeddings. It utilizes Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) to build a real-time Large Language Model (LLM)-enabled data pipeline in Python, combining data from multiple databases.
@@ -251,4 +252,4 @@ Women age 15-49 with diabetes who have sought treatment: The data value is 80.7%
 
 ```
 
-
+Credit: NutriGPT as the baseline developed by Animesh.
