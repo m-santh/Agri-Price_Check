@@ -203,7 +203,7 @@ AgriPriceGPT offers a valuable service by bridging the gap between data sources 
 
 ## Utilization of the LLM App
 - AgriPriceGPT utilizes the LLM (Large Language Model) App features provided by Pathway to build a real-time data pipeline.
-- The LLM App enables natural language processing capabilities, allowing users to ask questions in plain language and receive relevant nutrition insights.
+- The LLM App enables natural language processing capabilities, allowing users to ask questions in plain language and receive pricing information on food.
 - AgriPriceGPT leverages the LLM's ability to process and analyze text data to extract meaningful information from various sources, including its connection to an SQL database.
 - This direct connection to the database enhances AgriPriceGPT's capabilities, as it can access and analyze data that already resides in multiple applications and databases, providing users with comprehensive insights about food prices and trends. This streamlining of data retrieval and analysis significantly improves the efficiency and effectiveness of the application.
 
