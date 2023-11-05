@@ -5,7 +5,7 @@
 credit: gencraft.com
 
 ## About AgriPriceGPT
-AgriPriceGPT is an AI-powered application that connects to a real-time **SQLite database** and generates data embeddings. It utilizes Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) to build a real-time Large Language Model (LLM)-enabled data pipeline in Python, combining data from multiple databases.
+AgriPriceGPT is an AI-powered application that connects to a real-time **CSV file** and generates data embeddings. It utilizes Pathway’s [LLM App features](https://github.com/pathwaycom/llm-app) to build a real-time Large Language Model (LLM)-enabled data pipeline in Python.
 
 ## How to Use
 
@@ -206,102 +206,9 @@ AgriPriceGPT offers a valuable service by bridging the gap between data sources 
 - The LLM App enables natural language processing capabilities, allowing users to ask questions in plain language and receive relevant nutrition insights.
 - AgriPriceGPT leverages the LLM's ability to process and analyze text data to extract meaningful information from various sources, including its connection to an SQL database.
 - This direct connection to the database enhances AgriPriceGPT's capabilities, as it can access and analyze data that already resides in multiple applications and databases, providing users with comprehensive insights about food prices and trends. This streamlining of data retrieval and analysis significantly improves the efficiency and effectiveness of the application.
-- 
-
-## Code sample
-
-The code establishes a connection with the database and generates a JSONL file whenever there are updates in the database. The variable "last_known_row_count" monitors these updates to ensure real-time generation of the JSON file.
-
-```python
-import sqlite3
-# import json
-
-def generate_jsonl_file():
-    c.execute('SELECT * FROM my_table')
-    rows = c.fetchall()
-    column_names = [column[0] for column in c.description]
-    
-    with open('data/data.jsonl', 'w') as f:
-        for row in rows:
-            inner_dict_str = str({column_names[i]: row[i] for i in range(len(column_names))})
-            outer_json_str = '{"doc": "' + inner_dict_str.replace('"', '\\"') + '"}'
-            f.write(outer_json_str + '\n')
-
-# Initialize last_known_row_count
-last_known_row_count = 0
-
-conn = sqlite3.connect('nutri_nfhs5_india.db')
-c = conn.cursor()
-
-while True:  
-    # Check current row count
-    c.execute('SELECT COUNT(*) FROM my_table')
-    current_row_count = c.fetchone()[0]
-    
-    # Compare with last known row count
-    if current_row_count != last_known_row_count:
-        generate_jsonl_file()
-        last_known_row_count = current_row_count
 
 
 ```
-The JSONL file will be subsequently processed using the Pathway API 
-```python
-import pathway as pw
-
-from common.embedder import embeddings, index_embeddings
-from common.prompt import prompt
-
-
-def run(host, port):
-    # Given a user question as a query from your API
-    query, response_writer = pw.io.http.rest_connector(
-        host=host,
-        port=port,
-        schema=QueryInputSchema,
-        autocommit_duration_ms=50,
-    )
-    print("1",query,response_writer)
-    # Real-time data coming from external data sources such as jsonlines file
-    sales_data = pw.io.jsonlines.read(
-        "./data",
-        schema=DataInputSchema,
-        mode="streaming"
-    )
-    print("2",sales_data)
-
-    # Compute embeddings for each document using the OpenAI Embeddings API
-    embedded_data = embeddings(context=sales_data, data_to_embed=sales_data.doc)
-    print("3",embedded_data)
-    # Construct an index on the generated embeddings in real-time
-    index = index_embeddings(embedded_data)
-    print("4",index)
-    # Generate embeddings for the query from the OpenAI Embeddings API
-    embedded_query = embeddings(context=query, data_to_embed=pw.this.query)
-    print("5",embedded_query)
-    # Build prompt using indexed data
-    responses = prompt(index, embedded_query, pw.this.query)
-    print("6",responses)
-    # Feed the prompt to ChatGPT and obtain the generated answer.
-    response_writer(responses)
-    print("7",response_writer)
-    # Run the pipeline
-    pw.run()
-
-
-class DataInputSchema(pw.Schema):
-    doc: str
-
-
-class QueryInputSchema(pw.Schema):
-    query: str
-
-```
-## How to run the project
-
-Example only supports Unix-like systems (such as Linux, macOS, BSD). If you are a Windows user, we highly recommend leveraging Windows Subsystem for Linux (WSL) or Dockerize the app to run as a container.
-![Peek 2023-11-03 15-04](https://github.com/AnimeshN/chatgpt-database-python-nutrition/assets/17973453/41d17008-0bd0-4f8a-b8f3-4a260b0c5853)
-
 
 ### Prerequisites
 
@@ -316,13 +223,13 @@ Then, follow the easy steps to install and get started using the sample app.
 This is done with the `git clone` command followed by the URL of the repository:
 
 ```bash
-git clone https://github.com/AnimeshN/AgriPriceGPT-database-python.git
+git clone https://github.com/m-santh/Agri-Price_Check.git
 ```
 
 Next,  navigate to the project folder:
 
 ```bash
-cd AgriPriceGPT-database-python
+cd Agri-Price_Check
 ```
 
 ### Step 2: Set environment variables
