@@ -279,24 +279,4 @@ You can run the UI separately by navigating to `cd examples/ui` and running Stre
 `streamlit run app.py` command. It connects to the Discounts backend API automatically and you will see the UI frontend is running http://localhost:8501/ on a browser:
 
 
-## Test the sample app
-
-
-When the user uploads this file to the file uploader and asks questions:
-
-```text
-Tell me about high Blood pressure situation in India?
-```
-
-You will get the response as its expected on the UI.
-
-```text
-Based on the given data, the situation of diabetes in India can be summarized as follows:
-
-High Blood Sugar in 15-49 year old women: The data value is 8.1%.
-Women age 15-49 who reported that they have diabetes: The data value is 1.9% (equivalent to 6,827,000 women).
-Women age 15-49 with diabetes who have sought treatment: The data value is 80.7% (equivalent to 289,981,000 women).
-
-```
-
 Credit: NutriGPT as the baseline developed by Animesh.
